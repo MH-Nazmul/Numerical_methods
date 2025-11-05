@@ -1,0 +1,1764 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Python Programming And Numerical Methods: A Guide For Engineers And Scientists &#8212; Python Numerical Methods</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Preface" href="chapter00.00-Preface.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/book_cover.jpg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python Numerical Methods</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="#">
+   Python Programming And Numerical Methods: A Guide For Engineers And Scientists
+  </a>
+ </li>
+</ul>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter00.00-Preface.html">
+   Preface
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapter00.01-Acknowledgment.html">
+   Acknowledgment
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter01.00-Python-Basics.html">
+   Chapter 1. Python Basics
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter01.01-Getting-Started-with-Python.html">
+     Getting Started with Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter01.02-Python-as-A-Calculator.html">
+     Python as a Calculator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter01.03-Managing-Packages.html">
+     Managing Packages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter01.04-Introduction-to-Jupyter-Notebook.html">
+     Introduction to Jupyter Notebook
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter01.05-Logial-Expressions-and-Operators.html">
+     Logical Expressions and Operators
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter01.06-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter01.06-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter02.00-Variables-and-Basic-Data-Structures.html">
+   Chapter 2. Variables and Basic Data Structures
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter02.01-Variables-and-Assignment.html">
+     Variables and Assignment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter02.02-Data-Structure-Strings.html">
+     Data Structure - Strings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter02.03-Data-Structure-Lists.html">
+     Data Structure - Lists
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter02.04-Data-Structure-Tuples.html">
+     Data Structure - Tuples
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter02.05-Data-Structure-Sets.html">
+     Data Structure - Sets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter02.06-Data-Structure-Dictionaries.html">
+     Data Structure - Dictionaries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter02.07-Introducing_numpy_arrays.html">
+     Introducing Numpy Arrays
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter02.08-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter02.08-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter03.00-Functions.html">
+   Chapter 3. Functions
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter03.01-Function-Basics.html">
+     Function Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter03.02-Local-Variables-and-Global-Variables.html">
+     Local Variables and Global Variables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter03.03-Nested-Functions.html">
+     Nested functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter03.04-Lambda-Functions.html">
+     Lambda Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter03.05-Functions-as-Arguments-to-Functions.html">
+     Functions as Arguments to Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter03.06-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter03.06-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter04.00-Branching-Statements.html">
+   Chapter 4. Branching Statements
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter04.01-If-Else-Statements.html">
+     If-Else Statements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter04.02-Ternary-Operators.html">
+     Ternary Operators
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter04.03-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter04.03-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter05.00-Iteration.html">
+   Chapter 5. Iteration
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter05.01-For-Loops.html">
+     For-Loops
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter05.02-While-Loops.html">
+     While Loops
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter05.03-Comprehensions.html">
+     Comprehensions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter05.04-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter05.04-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter06.00-Recursion.html">
+   Chapter 6. Recursion
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter06.01-Recursive-Functions.html">
+     Recursive Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter06.02-Divide-and-Conquer.html">
+     Divide and Conquer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter06.03-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter06.03-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter07.00-Object-Oriented-Programming.html">
+   Chapter 7. Object Oriented Programming (OOP)
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter07.01-Introduction-to-OOP.html">
+     Introduction to OOP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter07.02-Class-and-Object.html">
+     Class and Object
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter07.03-Inheritance-Encapsulation-and-Polymorphism.html">
+     Inheritance, Encapsulation and Polymorphism
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter07.04-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter07.04-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter08.00-Complexity.html">
+   Chapter 8. Complexity
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter08.01-Complexity-and-Big-O.html">
+     Complexity and Big-O Notation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter08.02-Complexity-Matters.html">
+     Complexity Matters
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter08.03-The-Profiler.html">
+     The Profiler
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter08.04-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter08.04-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter09.00-Representation-of-Numbers.html">
+   Chapter 9. Representation of Numbers
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter09.01-BaseN-and-Binary.html">
+     Base-N and Binary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter09.02-Floating-Point-Numbers.html">
+     Floating Point Numbers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter09.03-Roundoff-Errors.html">
+     Round-off Errors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter09.04-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter09.04-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter10.00-Errors-Practices-Debugging.html">
+   Chapter 10. Errors, Good Programming Practices, and Debugging
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter10.01-Error-Types.html">
+     Error Types
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter10.02-Avoid-Errors.html">
+     Avoid Errors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter10.03-Try-Except.html">
+     Try/Except
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter10.04-Type-Checking.html">
+     Type Checking
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter10.05-Debugging.html">
+     Debugging
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter10.06-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter10.06-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter11.00-Reading-and-Writing-Data.html">
+   Chapter 11. Reading and Writing Data
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter11.01-TXT-Files.html">
+     TXT Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter11.02-CSV-Files.html">
+     CSV Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter11.03-Pickle-Files.html">
+     Pickle Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter11.04-JSON-Files.html">
+     JSON Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter11.05-HDF5-Files.html">
+     HDF5 Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter11.06-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter11.06-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter12.00-Visualization-and-Plotting.html">
+   Chapter 12. Visualization and Plotting
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter12.01-2D-Plotting.html">
+     2D Plotting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter12.02-3D-Plotting.html">
+     3D Plotting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter12.03-Working-with-Maps.html">
+     Working with Maps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter12.04-Animations-and-Movies.html">
+     Animations and Movies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter12.05-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter12.05-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter13.00-Parallel-Your-Python.html">
+   Chapter 13. Parallel Your Python
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter13.01-Parallel-Computing-Basics.html">
+     Parallel Computing Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter13.02-Multiprocessing.html">
+     Multiprocessing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter13.03-Use-joblib.html">
+     Use joblib
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter13.04-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter13.04-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter14.00-Linear-Algebra-and-Systems-of-Linear-Equations.html">
+   Chapter 14. Linear Algebra and Systems of Linear Equations
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter14.01-Basics-of-Linear-Algebra.html">
+     Basics of Linear Algebra
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter14.02-Linear-Transformations.html">
+     Linear Transformations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter14.03-Systems-of-Linear-Equations.html">
+     Systems of Linear Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter14.04-Solutions-to-Systems-of-Linear-Equations.html">
+     Solutions to Systems of Linear Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter14.05-Solve-Systems-of-Linear-Equations-in-Python.html">
+     Solve Systems of Linear Equations in Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter14.06-Matrix-Inversion.html">
+     Matrix Inversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter14.07-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter14.07-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter15.00-Eigenvalues-and-Eigenvectors.html">
+   Chapter 15. Eigenvalues and Eigenvectors
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter15.01-Eigenvalues-and-Eigenvectors-Problem-Statement.html">
+     Eigenvalues and Eigenvectors Problem Statement
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter15.02-The-Power-Method.html">
+     The Power Method
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter15.03-The-QR-Method.html">
+     The QR Method
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter15.04-Eigenvalues-and-Eigenvectors-in-Python.html">
+     Eigenvalues and Eigenvectors in Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter15.05-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter15.05-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter16.00-Least-Squares-Regression.html">
+   Chapter 16. Least Squares Regression
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter16.01-Least-Squares-Regression-Problem-Statement.html">
+     Least Squares Regression Problem Statement
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter16.02-Least-Squares-Regression-Derivation-Linear-Algebra.html">
+     Least Squares Regression Derivation (Linear Algebra)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter16.03-Least-Squares-Regression-Derivation-Multivariable-Calculus.html">
+     Least Squares Regression Derivation (Multivariable Calculus)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter16.04-Least-Squares-Regression-in-Python.html">
+     Least Squares Regression in Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter16.05-Least-Square-Regression-for-Nonlinear-Functions.html">
+     Least Square Regression for Nonlinear Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter16.06-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter16.06-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter17.00-Interpolation.html">
+   Chapter 17. Interpolation
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter17.01-Interpolation-Problem-Statement.html">
+     Interpolation Problem Statement
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter17.02-Linear-Interpolation.html">
+     Linear Interpolation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter17.03-Cubic-Spline-Interpolation.html">
+     Cubic Spline Interpolation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter17.04-Lagrange-Polynomial-Interpolation.html">
+     Lagrange Polynomial Interpolation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter17.05-Newtons-Polynomial-Interpolation.html">
+     Newton’s Polynomial Interpolation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter17.06-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter17.06-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter18.00-Series.html">
+   Chapter 18. Series
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter18.01-Expressing-Functions-with-Taylor-Series.html">
+     Expressing Functions with Taylor Series
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter18.02-Approximations-with-Taylor-Series.html">
+     Approximations with Taylor Series
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter18.03-Discussion-on-Errors.html">
+     Discussion on Errors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter18.04-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter18.04-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter19.00-Root-Finding.html">
+   Chapter 19. Root Finding
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter19.01-Root-Finding-Problem-Statement.html">
+     Root Finding Problem Statement
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter19.02-Tolerance.html">
+     Tolerance
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter19.03-Bisection-Method.html">
+     Bisection Method
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter19.04-Newton-Raphson-Method.html">
+     Newton-Raphson Method
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter19.05-Root-Finding-in-Python.html">
+     Root Finding in Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter19.06-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter19.06-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter20.00-Numerical-Differentiation.html">
+   Chapter 20. Numerical Differentiation
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter20.01-Numerical-Differentiation-Problem-Statement.html">
+     Numerical Differentiation Problem Statement
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter20.02-Finite-Difference-Approximating-Derivatives.html">
+     Finite Difference Approximating Derivatives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter20.03-Approximating-of-Higher-Order-Derivatives.html">
+     Approximating of Higher Order Derivatives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter20.04-Numerical-Differentiation-with-Noise.html">
+     Numerical Differentiation with Noise
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter20.05-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter20.05-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter21.00-Numerical-Integration.html">
+   Chapter 21. Numerical Integration
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter21.01-Numerical-Integration-Problem-Statement.html">
+     Numerical Integration Problem Statement
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter21.02-Riemanns-Integral.html">
+     Riemanns Integral
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter21.03-Trapezoid-Rule.html">
+     Trapezoid Rule
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter21.04-Simpsons-Rule.html">
+     Simpson’s Rule
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter21.05-Computing-Integrals-in-Python.html">
+     Computing Integrals in Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter21.06-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter21.06-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter22.00-ODE-Initial-Value-Problems.html">
+   Chapter 22. Ordinary Differential Equation - Initial Value Problems
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter22.01-ODE-Initial-Value-Problem-Statement.html">
+     ODE Initial Value Problem Statement
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter22.02-Reduction-of-Order.html">
+     Reduction of Order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter22.03-The-Euler-Method.html">
+     The Euler Method
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter22.04-Numerical-Error-and-Instability.html">
+     Numerical Error and Instability
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter22.05-Predictor-Corrector-Methods.html">
+     Predictor-Corrector and Runge Kutta Methods
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter22.06-Python-ODE-Solvers.html">
+     Python ODE Solvers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter22.07-Advanced-Topics.html">
+     Advanced Topics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter22.08-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter22.08-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter23.00-ODE-Boundary-Value-Problems.html">
+   Chapter 23. Ordinary Differential Equation - Boundary Value Problems
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter23.01-ODE-Boundary-Value-Problem-Statement.html">
+     ODE Boundary Value Problem Statement
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter23.02-The-Shooting-Method.html">
+     The Shooting Methods
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter23.03-Finite-Difference-Method.html">
+     Finite Difference Method
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter23.04-Numerical-Error-and-Instability.html">
+     Numerical Error and Instability (BVP)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter23.05-Python-ODE-Solvers.html">
+     Python ODE Solvers (BVP)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter23.06-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter23.06-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter24.00-Fourier-Transforms.html">
+   Chapter 24. Fourier Transform
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter24.01-The-Basics-of-waves.html">
+     The Basics of Waves
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter24.02-Discrete-Fourier-Transform.html">
+     Discrete Fourier Transform (DFT)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter24.03-Fast-Fourier-Transform.html">
+     Fast Fourier Transform (FFT)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter24.04-FFT-in-Python.html">
+     FFT in Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter24.05-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter24.05-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="chapter25.00-Introduction-to-Machine-Learning.html">
+   Chapter 25. Introduction to Machine Learning
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter25.01-Concept-of-Machine-Learning.html">
+     Concept of Machine Learning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter25.02-Classification.html">
+     Classification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter25.03-Regression.html">
+     Regression
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter25.04-Clustering.html">
+     Clustering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter25.05-Summary-and-Problems.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter25.05-Summary-and-Problems.html#problems">
+     Problems
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Appendix01-Getting-Started-with-Python-Windows.html">
+   Appendix A. Getting Started with Python on Windows
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebooks/Index.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://pythonnumericalmethods.berkeley.edu"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of Contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preface">
+     <span class="xref myst">
+      PREFACE
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#acknowledgment">
+     <span class="xref myst">
+      Acknowledgment
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-i-introduction-to-python-programming">
+     PART I INTRODUCTION TO PYTHON PROGRAMMING
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-1-python-basics">
+     <span class="xref myst">
+      CHAPTER 1. Python Basics
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-2-variables-and-basic-data-structures">
+     <span class="xref myst">
+      CHAPTER 2. Variables and Basic Data Structures
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-3-functions">
+     <span class="xref myst">
+      CHAPTER 3. Functions
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-4-branching-statements">
+     <span class="xref myst">
+      CHAPTER 4. Branching Statements
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-5-iteration">
+     <span class="xref myst">
+      CHAPTER 5. Iteration
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-6-recursion">
+     <span class="xref myst">
+      CHAPTER 6. Recursion
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-7-object-oriented-programming-oop">
+     <span class="xref myst">
+      CHAPTER 7. Object Oriented Programming (OOP)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-8-complexity">
+     <span class="xref myst">
+      CHAPTER 8. Complexity
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-9-representation-of-numbers">
+     <span class="xref myst">
+      CHAPTER 9. Representation of Numbers
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-10-errors-good-programming-practices-and-debugging">
+     <span class="xref myst">
+      CHAPTER 10. Errors, Good Programming Practices, and Debugging
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-11-reading-and-writing-data">
+     <span class="xref myst">
+      CHAPTER 11.  Reading and Writing Data
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-12-visualization-and-plotting">
+     <span class="xref myst">
+      CHAPTER 12.  Visualization and Plotting
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-13-parallel-your-python">
+     <span class="xref myst">
+      CHAPTER 13.  Parallel Your Python
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-ii-introduction-to-numerical-methods">
+     PART II INTRODUCTION TO NUMERICAL METHODS
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-14-linear-algebra-and-systems-of-linear-equations">
+     <span class="xref myst">
+      CHAPTER 14.  Linear Algebra and Systems of Linear Equations
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-15-eigenvalues-and-eigenvectors">
+     <span class="xref myst">
+      CHAPTER 15.  Eigenvalues and Eigenvectors
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-16-least-squares-regression">
+     <span class="xref myst">
+      CHAPTER 16.  Least Squares Regression
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-17-interpolation">
+     <span class="xref myst">
+      CHAPTER 17. Interpolation
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-18-series">
+     <span class="xref myst">
+      CHAPTER 18. Series
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-19-root-finding">
+     <span class="xref myst">
+      CHAPTER 19. Root Finding
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-20-numerical-differentiation">
+     <span class="xref myst">
+      CHAPTER 20. Numerical Differentiation
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-21-numerical-integration">
+     <span class="xref myst">
+      CHAPTER 21. Numerical Integration
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-22-ordinary-differential-equations-odes-initial-value-problems">
+     <span class="xref myst">
+      CHAPTER 22. Ordinary Differential Equations (ODEs): Initial-Value Problems
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-23-ordinary-differential-equations-boundary-value-problems">
+     <span class="xref myst">
+      CHAPTER 23. Ordinary Differential Equations: Boundary-Value Problems
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-24-fourier-transforms">
+     <span class="xref myst">
+      CHAPTER 24. Fourier Transforms
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chapter-25-introduction-to-machine-learning">
+     <span class="xref myst">
+      CHAPTER 25. Introduction to Machine Learning
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#appendix-a-getting-started-with-python-windows">
+     <span class="xref myst">
+      Appendix A. Getting-Started-with-Python-Windows
+     </span>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python-programming-and-numerical-methods-a-guide-for-engineers-and-scientists">
+<h1>Python Programming And Numerical Methods: A Guide For Engineers And Scientists<a class="headerlink" href="#python-programming-and-numerical-methods-a-guide-for-engineers-and-scientists" title="Permalink to this headline">¶</a></h1>
+<p><img alt="Book Cover" src="../_images/book_cover.jpg" /></p>
+<p><em>This notebook contains an excerpt from the <a class="reference external" href="https://www.elsevier.com/books/python-programming-and-numerical-methods/kong/978-0-12-819549-9">Python Programming and Numerical Methods - A Guide for Engineers and Scientists</a>, the content is also available at <a class="reference external" href="https://pythonnumericalmethods.berkeley.edu/notebooks/Index.html">Berkeley Python Numerical Methods</a>.</em></p>
+<p><em>The copyright of the book belongs to Elsevier. We also have this interactive book online for a better learning experience. The code is released under the <a class="reference external" href="https://opensource.org/licenses/MIT">MIT license</a>. If you find this content useful, please consider supporting the work on <a class="reference external" href="https://www.elsevier.com/books/python-programming-and-numerical-methods/kong/978-0-12-819549-9">Elsevier</a> or <a class="reference external" href="https://www.amazon.com/Python-Programming-Numerical-Methods-Scientists/dp/0128195495/ref=sr_1_1?dchild=1&amp;keywords=Python+Programming+and+Numerical+Methods+-+A+Guide+for+Engineers+and+Scientists&amp;qid=1604761352&amp;sr=8-1">Amazon</a>!</em></p>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="preface">
+<h3><a class="reference internal" href="chapter00.00-Preface.html"><span class="doc std std-doc">PREFACE</span></a><a class="headerlink" href="#preface" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="acknowledgment">
+<h3><a class="reference internal" href="chapter00.01-Acknowledgment.html"><span class="doc std std-doc">Acknowledgment</span></a><a class="headerlink" href="#acknowledgment" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="part-i-introduction-to-python-programming">
+<h3>PART I INTRODUCTION TO PYTHON PROGRAMMING<a class="headerlink" href="#part-i-introduction-to-python-programming" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="chapter-1-python-basics">
+<h3><a class="reference internal" href="chapter01.00-Python-Basics.html"><span class="doc std std-doc">CHAPTER 1. Python Basics</span></a><a class="headerlink" href="#chapter-1-python-basics" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter01.01-Getting-Started-with-Python.html"><span class="doc std std-doc">1.1 Getting Started with Python</span></a></p></li>
+<li><p><a class="reference internal" href="chapter01.02-Python-as-A-Calculator.html"><span class="doc std std-doc">1.2 Python as A Calculator</span></a></p></li>
+<li><p><a class="reference internal" href="chapter01.03-Managing-Packages.html"><span class="doc std std-doc">1.3 Managing Packages</span></a></p></li>
+<li><p><a class="reference internal" href="chapter01.04-Introduction-to-Jupyter-Notebook.html"><span class="doc std std-doc">1.4 Introduction to Jupyter Notebook</span></a></p></li>
+<li><p><a class="reference internal" href="chapter01.05-Logial-Expressions-and-Operators.html"><span class="doc std std-doc">1.5 Logical Expressions and Operators</span></a></p></li>
+<li><p><a class="reference internal" href="chapter01.06-Summary-and-Problems.html"><span class="doc std std-doc">1.6 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-2-variables-and-basic-data-structures">
+<h3><a class="reference internal" href="chapter02.00-Variables-and-Basic-Data-Structures.html"><span class="doc std std-doc">CHAPTER 2. Variables and Basic Data Structures</span></a><a class="headerlink" href="#chapter-2-variables-and-basic-data-structures" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter02.01-Variables-and-Assignment.html"><span class="doc std std-doc">2.1 Variables and Assignment</span></a></p></li>
+<li><p><a class="reference internal" href="chapter02.02-Data-Structure-Strings.html"><span class="doc std std-doc">2.2 Data Structure - Strings</span></a></p></li>
+<li><p><a class="reference internal" href="chapter02.03-Data-Structure-Lists.html"><span class="doc std std-doc">2.3 Data Structure - Lists</span></a></p></li>
+<li><p><a class="reference internal" href="chapter02.04-Data-Structure-Tuples.html"><span class="doc std std-doc">2.4 Data Structure - Tuples</span></a></p></li>
+<li><p><a class="reference internal" href="chapter02.05-Data-Structure-Sets.html"><span class="doc std std-doc">2.5 Data Structure - Sets</span></a></p></li>
+<li><p><a class="reference internal" href="chapter02.06-Data-Structure-Dictionaries.html"><span class="doc std std-doc">2.6 Data Structure - Dictionaries</span></a></p></li>
+<li><p><a class="reference internal" href="chapter02.07-Introducing_numpy_arrays.html"><span class="doc std std-doc">2.7 Introducing Numpy Arrays</span></a></p></li>
+<li><p><a class="reference internal" href="chapter02.08-Summary-and-Problems.html"><span class="doc std std-doc">2.8 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-3-functions">
+<h3><a class="reference internal" href="chapter03.00-Functions.html"><span class="doc std std-doc">CHAPTER 3. Functions</span></a><a class="headerlink" href="#chapter-3-functions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter03.01-Function-Basics.html"><span class="doc std std-doc">3.1 Function Basics</span></a></p></li>
+<li><p><a class="reference internal" href="chapter03.02-Local-Variables-and-Global-Variables.html"><span class="doc std std-doc">3.2 Local Variables and Global Variables</span></a></p></li>
+<li><p><a class="reference internal" href="chapter03.03-Nested-Functions.html"><span class="doc std std-doc">3.3 Nested Functions</span></a></p></li>
+<li><p><a class="reference internal" href="chapter03.04-Lambda-Functions.html"><span class="doc std std-doc">3.4 Lambda Functions</span></a></p></li>
+<li><p><a class="reference internal" href="chapter03.05-Functions-as-Arguments-to-Functions.html"><span class="doc std std-doc">3.5 Functions as Arguments to Functions </span></a></p></li>
+<li><p><a class="reference internal" href="chapter03.06-Summary-and-Problems.html"><span class="doc std std-doc">3.6 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-4-branching-statements">
+<h3><a class="reference internal" href="chapter04.00-Branching-Statements.html"><span class="doc std std-doc">CHAPTER 4. Branching Statements</span></a><a class="headerlink" href="#chapter-4-branching-statements" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter04.01-If-Else-Statements.html"><span class="doc std std-doc">4.1 If-Else Statements</span></a></p></li>
+<li><p><a class="reference internal" href="chapter04.02-Ternary-Operators.html"><span class="doc std std-doc">4.2 Ternary Operators</span></a></p></li>
+<li><p><a class="reference internal" href="chapter04.03-Summary-and-Problems.html"><span class="doc std std-doc">4.3 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-5-iteration">
+<h3><a class="reference internal" href="chapter05.00-Iteration.html"><span class="doc std std-doc">CHAPTER 5. Iteration</span></a><a class="headerlink" href="#chapter-5-iteration" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter05.01-For-Loops.html"><span class="doc std std-doc">5.1 For Loops</span></a></p></li>
+<li><p><a class="reference internal" href="chapter05.02-While-Loops.html"><span class="doc std std-doc">5.2 While Loops</span></a></p></li>
+<li><p><a class="reference internal" href="chapter05.03-Comprehensions.html"><span class="doc std std-doc">5.3 Comprehensions</span></a></p></li>
+<li><p><a class="reference internal" href="chapter05.04-Summary-and-Problems.html"><span class="doc std std-doc">5.4 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-6-recursion">
+<h3><a class="reference internal" href="chapter06.00-Recursion.html"><span class="doc std std-doc">CHAPTER 6. Recursion</span></a><a class="headerlink" href="#chapter-6-recursion" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter06.01-Recursive-Functions.html"><span class="doc std std-doc">6.1 Recursive Functions</span></a></p></li>
+<li><p><a class="reference internal" href="chapter06.02-Divide-and-Conquer.html"><span class="doc std std-doc">6.2 Divide and Conquer</span></a></p></li>
+<li><p><a class="reference internal" href="chapter06.03-Summary-and-Problems.html"><span class="doc std std-doc">6.3 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-7-object-oriented-programming-oop">
+<h3><a class="reference internal" href="chapter07.00-Object-Oriented-Programming.html"><span class="doc std std-doc">CHAPTER 7. Object Oriented Programming (OOP)</span></a><a class="headerlink" href="#chapter-7-object-oriented-programming-oop" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter07.01-Introduction-to-OOP.html"><span class="doc std std-doc">7.1 Introduction to OOP</span></a></p></li>
+<li><p><a class="reference internal" href="chapter07.02-Class-and-Object.html"><span class="doc std std-doc">7.2 Class and Object</span></a></p></li>
+<li><p><a class="reference internal" href="chapter07.03-Inheritance-Encapsulation-and-Polymorphism.html"><span class="doc std std-doc">7.3 Inheritance</span></a></p></li>
+<li><p><a class="reference internal" href="chapter07.04-Summary-and-Problems.html"><span class="doc std std-doc">7.4 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-8-complexity">
+<h3><a class="reference internal" href="chapter08.00-Complexity.html"><span class="doc std std-doc">CHAPTER 8. Complexity</span></a><a class="headerlink" href="#chapter-8-complexity" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter08.01-Complexity-and-Big-O.html"><span class="doc std std-doc">8.1 Complexity and Big-O Notation</span></a></p></li>
+<li><p><a class="reference internal" href="chapter08.02-Complexity-Matters.html"><span class="doc std std-doc">8.2 Complexity Matters</span></a></p></li>
+<li><p><a class="reference internal" href="chapter08.03-The-Profiler.html"><span class="doc std std-doc">8.3 The Profiler</span></a></p></li>
+<li><p><a class="reference internal" href="chapter08.04-Summary-and-Problems.html"><span class="doc std std-doc">8.4 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-9-representation-of-numbers">
+<h3><a class="reference internal" href="chapter09.00-Representation-of-Numbers.html"><span class="doc std std-doc">CHAPTER 9. Representation of Numbers</span></a><a class="headerlink" href="#chapter-9-representation-of-numbers" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter09.01-BaseN-and-Binary.html"><span class="doc std std-doc">9.1 Base-N and Binary</span></a></p></li>
+<li><p><a class="reference internal" href="chapter09.02-Floating-Point-Numbers.html"><span class="doc std std-doc">9.2 Floating Point Numbers</span></a></p></li>
+<li><p><a class="reference internal" href="chapter09.03-Roundoff-Errors.html"><span class="doc std std-doc">9.3 Round-off Errors</span></a></p></li>
+<li><p><a class="reference internal" href="chapter09.04-Summary-and-Problems.html"><span class="doc std std-doc">9.4 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-10-errors-good-programming-practices-and-debugging">
+<h3><a class="reference internal" href="chapter10.00-Errors-Practices-Debugging.html"><span class="doc std std-doc">CHAPTER 10. Errors, Good Programming Practices, and Debugging</span></a><a class="headerlink" href="#chapter-10-errors-good-programming-practices-and-debugging" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter10.01-Error-Types.html"><span class="doc std std-doc">10.1 Error Types</span></a></p></li>
+<li><p><a class="reference internal" href="chapter10.02-Avoid-Errors.html"><span class="doc std std-doc">10.2 Avoiding Errors</span></a></p></li>
+<li><p><a class="reference internal" href="chapter10.03-Try-Except.html"><span class="doc std std-doc">10.3 Try/Except</span></a></p></li>
+<li><p><a class="reference internal" href="chapter10.04-Type-Checking.html"><span class="doc std std-doc">10.4 Type Checking</span></a></p></li>
+<li><p><a class="reference internal" href="chapter10.05-Debugging.html"><span class="doc std std-doc">10.5 Debugging</span></a></p></li>
+<li><p><a class="reference internal" href="chapter10.06-Summary-and-Problems.html"><span class="doc std std-doc">10.6 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-11-reading-and-writing-data">
+<h3><a class="reference internal" href="chapter11.00-Reading-and-Writing-Data.html"><span class="doc std std-doc">CHAPTER 11.  Reading and Writing Data</span></a><a class="headerlink" href="#chapter-11-reading-and-writing-data" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter11.01-TXT-Files.html"><span class="doc std std-doc">11.1 TXT Files</span></a></p></li>
+<li><p><a class="reference internal" href="chapter11.02-CSV-Files.html"><span class="doc std std-doc">11.2 CSV Files</span></a></p></li>
+<li><p><a class="reference internal" href="chapter11.03-Pickle-Files.html"><span class="doc std std-doc">11.3 Pickle Files</span></a></p></li>
+<li><p><a class="reference internal" href="chapter11.04-JSON-Files.html"><span class="doc std std-doc">11.4 JSON Files</span></a></p></li>
+<li><p><a class="reference internal" href="chapter11.05-HDF5-Files.html"><span class="doc std std-doc">11.5 HDF5 Files</span></a></p></li>
+<li><p><a class="reference internal" href="chapter11.06-Summary-and-Problems.html"><span class="doc std std-doc">11.6 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-12-visualization-and-plotting">
+<h3><a class="reference internal" href="chapter12.00-Visualization-and-Plotting.html"><span class="doc std std-doc">CHAPTER 12.  Visualization and Plotting</span></a><a class="headerlink" href="#chapter-12-visualization-and-plotting" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter12.01-2D-Plotting.html"><span class="doc std std-doc">12.1 2D Plotting</span></a></p></li>
+<li><p><a class="reference internal" href="chapter12.02-3D-Plotting.html"><span class="doc std std-doc">12.2 3D Plotting</span></a></p></li>
+<li><p><a class="reference internal" href="chapter12.03-Working-with-Maps.html"><span class="doc std std-doc">12.3 Working with Maps</span></a></p></li>
+<li><p><a class="reference internal" href="chapter12.04-Animations-and-Movies.html"><span class="doc std std-doc">12.4 Animations and Movies</span></a></p></li>
+<li><p><a class="reference internal" href="chapter12.05-Summary-and-Problems.html"><span class="doc std std-doc">12.5 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-13-parallel-your-python">
+<h3><a class="reference internal" href="chapter13.00-Parallel-Your-Python.html"><span class="doc std std-doc">CHAPTER 13.  Parallel Your Python</span></a><a class="headerlink" href="#chapter-13-parallel-your-python" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter13.01-Parallel-Computing-Basics.html"><span class="doc std std-doc">13.1 Parallel Computing Basics</span></a></p></li>
+<li><p><a class="reference internal" href="chapter13.02-Multiprocessing.html"><span class="doc std std-doc">13.2 Multiprocessing</span></a></p></li>
+<li><p><a class="reference internal" href="chapter13.03-Use-joblib.html"><span class="doc std std-doc">13.3 Use joblib</span></a></p></li>
+<li><p><a class="reference internal" href="chapter13.04-Summary-and-Problems.html"><span class="doc std std-doc">13.4 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="part-ii-introduction-to-numerical-methods">
+<h3>PART II INTRODUCTION TO NUMERICAL METHODS<a class="headerlink" href="#part-ii-introduction-to-numerical-methods" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="chapter-14-linear-algebra-and-systems-of-linear-equations">
+<h3><a class="reference internal" href="chapter14.00-Linear-Algebra-and-Systems-of-Linear-Equations.html"><span class="doc std std-doc">CHAPTER 14.  Linear Algebra and Systems of Linear Equations</span></a><a class="headerlink" href="#chapter-14-linear-algebra-and-systems-of-linear-equations" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter14.01-Basics-of-Linear-Algebra.html"><span class="doc std std-doc">14.1 Basics of Linear Algebra</span></a></p></li>
+<li><p><a class="reference internal" href="chapter14.02-Linear-Transformations.html"><span class="doc std std-doc">14.2 Linear Transformations</span></a></p></li>
+<li><p><a class="reference internal" href="chapter14.03-Systems-of-Linear-Equations.html"><span class="doc std std-doc">14.3 Systems of Linear Equations</span></a></p></li>
+<li><p><a class="reference internal" href="chapter14.04-Solutions-to-Systems-of-Linear-Equations.html"><span class="doc std std-doc">14.4 Solutions to Systems of Linear Equations</span></a></p></li>
+<li><p><a class="reference internal" href="chapter14.05-Solve-Systems-of-Linear-Equations-in-Python.html"><span class="doc std std-doc">14.5 Solve Systems of Linear Equations in Python</span></a></p></li>
+<li><p><a class="reference internal" href="chapter14.06-Matrix-Inversion.html"><span class="doc std std-doc">14.6 Matrix Inversion</span></a></p></li>
+<li><p><a class="reference internal" href="chapter14.07-Summary-and-Problems.html"><span class="doc std std-doc">14.7 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-15-eigenvalues-and-eigenvectors">
+<h3><a class="reference internal" href="chapter15.00-Eigenvalues-and-Eigenvectors.html"><span class="doc std std-doc">CHAPTER 15.  Eigenvalues and Eigenvectors</span></a><a class="headerlink" href="#chapter-15-eigenvalues-and-eigenvectors" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter15.01-Eigenvalues-and-Eigenvectors-Problem-Statement.html"><span class="doc std std-doc">15.1 Eigenvalues and Eigenvectors Problem Statement</span></a></p></li>
+<li><p><a class="reference internal" href="chapter15.02-The-Power-Method.html"><span class="doc std std-doc">15.2 The Power Method</span></a></p></li>
+<li><p><a class="reference internal" href="chapter15.03-The-QR-Method.html"><span class="doc std std-doc">15.3 The QR Method</span></a></p></li>
+<li><p><a class="reference internal" href="chapter15.04-Eigenvalues-and-Eigenvectors-in-Python.html"><span class="doc std std-doc">15.4 Eigenvalues and Eigenvectors in Python</span></a></p></li>
+<li><p><a class="reference internal" href="chapter15.05-Summary-and-Problems.html"><span class="doc std std-doc">15.5 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-16-least-squares-regression">
+<h3><a class="reference internal" href="chapter16.00-Least-Squares-Regression.html"><span class="doc std std-doc">CHAPTER 16.  Least Squares Regression</span></a><a class="headerlink" href="#chapter-16-least-squares-regression" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter16.01-Least-Squares-Regression-Problem-Statement.html"><span class="doc std std-doc">16.1 Least Squares Regression Problem Statement</span></a></p></li>
+<li><p><a class="reference internal" href="chapter16.02-Least-Squares-Regression-Derivation-Linear-Algebra.html"><span class="doc std std-doc">16.2 Least Squares Regression Derivation (Linear Algebra)</span></a></p></li>
+<li><p><a class="reference internal" href="chapter16.03-Least-Squares-Regression-Derivation-Multivariable-Calculus.html"><span class="doc std std-doc">16.3 Least Squares Regression Derivation (Multivariable Calculus)</span></a></p></li>
+<li><p><a class="reference internal" href="chapter16.04-Least-Squares-Regression-in-Python.html"><span class="doc std std-doc">16.4 Least Squares Regression in Python</span></a></p></li>
+<li><p><a class="reference internal" href="chapter16.05-Least-Square-Regression-for-Nonlinear-Functions.html"><span class="doc std std-doc">16.5 Least Square Regression for Nonlinear Functions</span></a></p></li>
+<li><p><a class="reference internal" href="chapter16.06-Summary-and-Problems.html"><span class="doc std std-doc">16.6 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-17-interpolation">
+<h3><a class="reference internal" href="chapter17.00-Interpolation.html"><span class="doc std std-doc">CHAPTER 17. Interpolation</span></a><a class="headerlink" href="#chapter-17-interpolation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter17.01-Interpolation-Problem-Statement.html"><span class="doc std std-doc">17.1 Interpolation Problem Statement</span></a></p></li>
+<li><p><a class="reference internal" href="chapter17.02-Linear-Interpolation.html"><span class="doc std std-doc">17.2 Linear Interpolation</span></a></p></li>
+<li><p><a class="reference internal" href="chapter17.03-Cubic-Spline-Interpolation.html"><span class="doc std std-doc">17.3 Cubic Spline Interpolation</span></a></p></li>
+<li><p><a class="reference internal" href="chapter17.04-Lagrange-Polynomial-Interpolation.html"><span class="doc std std-doc">17.4 Lagrange Polynomial Interpolation</span></a></p></li>
+<li><p><a class="reference internal" href="chapter17.05-Newtons-Polynomial-Interpolation.html"><span class="doc std std-doc">17.5 Newton’s Polynomial Interpolation</span></a></p></li>
+<li><p><a class="reference internal" href="chapter17.06-Summary-and-Problems.html"><span class="doc std std-doc">17.6 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-18-series">
+<h3><a class="reference internal" href="chapter18.00-Series.html"><span class="doc std std-doc">CHAPTER 18. Series</span></a><a class="headerlink" href="#chapter-18-series" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter18.01-Expressing-Functions-with-Taylor-Series.html"><span class="doc std std-doc">18.1 Expressing Functions with Taylor Series</span></a></p></li>
+<li><p><a class="reference internal" href="chapter18.02-Approximations-with-Taylor-Series.html"><span class="doc std std-doc">18.2 Approximations with Taylor Series</span></a></p></li>
+<li><p><a class="reference internal" href="chapter18.03-Discussion-on-Errors.html"><span class="doc std std-doc">18.3 Discussion on Errors</span></a></p></li>
+<li><p><a class="reference internal" href="chapter18.04-Summary-and-Problems.html"><span class="doc std std-doc">18.4 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-19-root-finding">
+<h3><a class="reference internal" href="chapter19.00-Root-Finding.html"><span class="doc std std-doc">CHAPTER 19. Root Finding</span></a><a class="headerlink" href="#chapter-19-root-finding" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter19.01-Root-Finding-Problem-Statement.html"><span class="doc std std-doc">19.1 Root Finding Problem Statement</span></a></p></li>
+<li><p><a class="reference internal" href="chapter19.02-Tolerance.html"><span class="doc std std-doc">19.2 Tolerance</span></a></p></li>
+<li><p><a class="reference internal" href="chapter19.03-Bisection-Method.html"><span class="doc std std-doc">19.3 Bisection Method</span></a></p></li>
+<li><p><a class="reference internal" href="chapter19.04-Newton-Raphson-Method.html"><span class="doc std std-doc">19.4 Newton-Raphson Method</span></a></p></li>
+<li><p><a class="reference internal" href="chapter19.05-Root-Finding-in-Python.html"><span class="doc std std-doc">19.5 Root Finding in Python</span></a></p></li>
+<li><p><a class="reference internal" href="chapter19.06-Summary-and-Problems.html"><span class="doc std std-doc">19.6 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-20-numerical-differentiation">
+<h3><a class="reference internal" href="chapter20.00-Numerical-Differentiation.html"><span class="doc std std-doc">CHAPTER 20. Numerical Differentiation</span></a><a class="headerlink" href="#chapter-20-numerical-differentiation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter20.01-Numerical-Differentiation-Problem-Statement.html"><span class="doc std std-doc">20.1 Numerical Differentiation Problem Statement</span></a></p></li>
+<li><p><a class="reference internal" href="chapter20.02-Finite-Difference-Approximating-Derivatives.html"><span class="doc std std-doc">20.2 Finite Difference Approximating Derivatives</span></a></p></li>
+<li><p><a class="reference internal" href="chapter20.03-Approximating-of-Higher-Order-Derivatives.html"><span class="doc std std-doc">20.3 Approximating of Higher Order Derivatives</span></a></p></li>
+<li><p><a class="reference internal" href="chapter20.04-Numerical-Differentiation-with-Noise.html"><span class="doc std std-doc">20.4 Numerical Differentiation with Noise</span></a></p></li>
+<li><p><a class="reference internal" href="chapter20.05-Summary-and-Problems.html"><span class="doc std std-doc">20.5 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-21-numerical-integration">
+<h3><a class="reference internal" href="chapter21.00-Numerical-Integration.html"><span class="doc std std-doc">CHAPTER 21. Numerical Integration</span></a><a class="headerlink" href="#chapter-21-numerical-integration" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter21.01-Numerical-Integration-Problem-Statement.html"><span class="doc std std-doc">21.1 Numerical Integration Problem Statement</span></a></p></li>
+<li><p><a class="reference internal" href="chapter21.02-Riemanns-Integral.html"><span class="doc std std-doc">21.2 Riemann’s Integral</span></a></p></li>
+<li><p><a class="reference internal" href="chapter21.03-Trapezoid-Rule.html"><span class="doc std std-doc">21.3 Trapezoid Rule</span></a></p></li>
+<li><p><a class="reference internal" href="chapter21.04-Simpsons-Rule.html"><span class="doc std std-doc">21.4 Simpson’s Rule</span></a></p></li>
+<li><p><a class="reference internal" href="chapter21.05-Computing-Integrals-in-Python.html"><span class="doc std std-doc">21.5 Computing Integrals in Python</span></a></p></li>
+<li><p><a class="reference internal" href="chapter21.06-Summary-and-Problems.html"><span class="doc std std-doc">21.6 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-22-ordinary-differential-equations-odes-initial-value-problems">
+<h3><a class="reference internal" href="chapter22.00-ODE-Initial-Value-Problems.html"><span class="doc std std-doc">CHAPTER 22. Ordinary Differential Equations (ODEs): Initial-Value Problems</span></a><a class="headerlink" href="#chapter-22-ordinary-differential-equations-odes-initial-value-problems" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter22.01-ODE-Initial-Value-Problem-Statement.html"><span class="doc std std-doc">22.1 ODE Initial Value Problem Statement</span></a></p></li>
+<li><p><a class="reference internal" href="chapter22.02-Reduction-of-Order.html"><span class="doc std std-doc">22.2 Reduction of Order</span></a></p></li>
+<li><p><a class="reference internal" href="chapter22.03-The-Euler-Method.html"><span class="doc std std-doc">22.3 The Euler Method</span></a></p></li>
+<li><p><a class="reference internal" href="chapter22.04-Numerical-Error-and-Instability.html"><span class="doc std std-doc">22.4 Numerical Error and Instability</span></a></p></li>
+<li><p><a class="reference internal" href="chapter22.05-Predictor-Corrector-Methods.html"><span class="doc std std-doc">22.5 Predictor-Corrector Methods</span></a></p></li>
+<li><p><a class="reference internal" href="chapter22.06-Python-ODE-Solvers.html"><span class="doc std std-doc">22.6 Python ODE Solvers (IVP)</span></a></p></li>
+<li><p><a class="reference internal" href="chapter22.07-Advanced-Topics.html"><span class="doc std std-doc">22.7 Advanced Topics</span></a></p></li>
+<li><p><a class="reference internal" href="chapter22.08-Summary-and-Problems.html"><span class="doc std std-doc">22.8 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-23-ordinary-differential-equations-boundary-value-problems">
+<h3><a class="reference internal" href="chapter23.00-ODE-Boundary-Value-Problems.html"><span class="doc std std-doc">CHAPTER 23. Ordinary Differential Equations: Boundary-Value Problems</span></a><a class="headerlink" href="#chapter-23-ordinary-differential-equations-boundary-value-problems" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter23.01-ODE-Boundary-Value-Problem-Statement.html"><span class="doc std std-doc">23.1 ODE Boundary Value Problem Statement</span></a></p></li>
+<li><p><a class="reference internal" href="chapter23.02-The-Shooting-Method.html"><span class="doc std std-doc">23.2 The Shooting Method</span></a></p></li>
+<li><p><a class="reference internal" href="chapter23.03-Finite-Difference-Method.html"><span class="doc std std-doc">23.3 Finite Difference Method</span></a></p></li>
+<li><p><a class="reference internal" href="chapter23.04-Numerical-Error-and-Instability.html"><span class="doc std std-doc">23.4 Numerical Error and Instability</span></a></p></li>
+<li><p><a class="reference internal" href="chapter23.05-Python-ODE-Solvers.html"><span class="doc std std-doc">23.5 Python ODE Solvers</span></a></p></li>
+<li><p><a class="reference internal" href="chapter23.06-Summary-and-Problems.html"><span class="doc std std-doc">23.6 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-24-fourier-transforms">
+<h3><a class="reference internal" href="chapter24.00-Fourier-Transforms.html"><span class="doc std std-doc">CHAPTER 24. Fourier Transforms</span></a><a class="headerlink" href="#chapter-24-fourier-transforms" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter24.01-The-Basics-of-waves.html"><span class="doc std std-doc">24.1 The Basics of Waves</span></a></p></li>
+<li><p><a class="reference internal" href="chapter24.02-Discrete-Fourier-Transform.html"><span class="doc std std-doc">24.2 Discrete Fourier Transform (DFT)</span></a></p></li>
+<li><p><a class="reference internal" href="chapter24.03-Fast-Fourier-Transform.html"><span class="doc std std-doc">24.3 Fast Fourier Transform (FFT)</span></a></p></li>
+<li><p><a class="reference internal" href="chapter24.04-FFT-in-Python.html"><span class="doc std std-doc">24.4 FFT in Python</span></a></p></li>
+<li><p><a class="reference internal" href="chapter24.05-Summary-and-Problems.html"><span class="doc std std-doc">24.5 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="chapter-25-introduction-to-machine-learning">
+<h3><a class="reference internal" href="chapter25.00-Introduction-to-Machine-Learning.html"><span class="doc std std-doc">CHAPTER 25. Introduction to Machine Learning</span></a><a class="headerlink" href="#chapter-25-introduction-to-machine-learning" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="chapter25.01-Concept-of-Machine-Learning.html"><span class="doc std std-doc">25.1 Concept of Machine Learning</span></a></p></li>
+<li><p><a class="reference internal" href="chapter25.02-Classification.html"><span class="doc std std-doc">25.2 Classification</span></a></p></li>
+<li><p><a class="reference internal" href="chapter25.03-Regression.html"><span class="doc std std-doc">25.3 Regression</span></a></p></li>
+<li><p><a class="reference internal" href="chapter25.04-Clustering.html"><span class="doc std std-doc">25.4 Clustering</span></a></p></li>
+<li><p><a class="reference internal" href="chapter25.05-Summary-and-Problems.html"><span class="doc std std-doc">25.5 Summary and Problems</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="appendix-a-getting-started-with-python-windows">
+<h3><a class="reference internal" href="Appendix01-Getting-Started-with-Python-Windows.html"><span class="doc std std-doc">Appendix A. Getting-Started-with-Python-Windows</span></a><a class="headerlink" href="#appendix-a-getting-started-with-python-windows" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='right-next' id="next-link" href="chapter00.00-Preface.html" title="next page">Preface</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
