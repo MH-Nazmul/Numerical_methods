@@ -1,0 +1,7 @@
+pip install numpy pandas matplotlib seaborn scikit-learn scipy joblib tensorflow torch torchvision torchaudio xgboost lightgbm statsmodels opencv-python jupyterlab notebook
+
+
+curl -o python-installer.exe https://www.python.org/ftp/python/3.12.7/python-3.12.7-amd64.exe && python-installer.exe /quiet InstallAllUsers=1 PrependPath=1 Include_pip=1
+
+
+python -m pip install --upgrade pip

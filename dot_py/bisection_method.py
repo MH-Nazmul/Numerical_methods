@@ -25,10 +25,10 @@ for i in range(1,max_iter+1):
         break
     if f(a)*fc<0:
         b=c
-    else:
+    elif(f(a)*fc>0):
         a=c
-else:
-    root=c
+    else:
+        root=c
 
 table(["iter","a","b","c","f(c)","interval"],rows)
 x=np.linspace(0,1,200)
